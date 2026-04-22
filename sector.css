@@ -1,0 +1,197 @@
+/* CSS-Only Servings Selector */
+.servings-selector {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #f9fafb;
+    border-radius: 0.5rem;
+}
+
+.servings-label {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #374151;
+}
+
+.servings-tabs {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.servings-tabs input[type="radio"] {
+    display: none;
+}
+
+.servings-tab {
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #e5e7eb;
+    color: #374151;
+    transition: all 0.3s;
+}
+
+.servings-tab:hover {
+    background-color: #d1d5db;
+}
+
+.servings-tabs input[type="radio"]:checked + .servings-tab {
+    background-color: #f97316;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hide/Show ingredient amounts based on selected servings */
+.amount-2pax,
+.amount-4pax,
+.amount-6pax {
+    display: none;
+}
+
+/* Show 2 PAX amounts by default */
+#pax2:checked ~ .recipe-detail-body .amount-2pax {
+    display: inline;
+}
+
+/* Show 4 PAX amounts when selected */
+#pax4:checked ~ .recipe-detail-body .amount-4pax {
+    display: inline;
+}
+
+/* Show 6 PAX amounts when selected */
+ ~ .recipe-detail-body .amount-6pax {
+    display: inline;
+}
+
+/* Default to 2 PAX if nothing is checked */
+.servings-selector:not(:has(input:checked)) ~ .recipe-detail-body .amount-2pax {
+    display: inline;
+}
+
+.recipe-detail-body {
+    display: grid;
+    gap: 2rem;
+}
+
+.recipe-section {
+    background-color: white;
+}
+
+.section-title-recipe {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #1f2937;
+}
+
+.ingredients-list-detail {
+    list-style: none;
+    padding: 0;
+}
+
+.ingredients-list-detail li {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+    color: #374151;
+    align-items: flex-start;
+}
+
+.ingredient-bullet {
+    color: #f97316;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.ingredient-text {
+    flex: 1;
+}
+
+.steps-list-detail {
+    list-style: none;
+    padding: 0;
+}
+
+.steps-list-detail li {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.step-number {
+    flex-shrink: 0;
+    width: 2rem;
+    height: 2rem;
+    background-color: #f97316;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.step-text {
+    padding-top: 0.25rem;
+    color: #374151;
+}
+
+/* About Page */
+.about-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 3rem;
+}
+
+.about-image {
+    width: 100%;
+    height: 24rem;
+    object-fit: cover;
+}
+
+.about-content {
+    padding: 3rem;
+}
+
+.about-intro {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border: 2px solid #f3f4f6;
+}
+
+.intro-text {
+    font-size: 1.125rem;
+    color: #374151;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.about-mission,
+.about-promise {
+    background-color: #fff7ed;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.mission-title,
+.promise-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #1f2937;
+}
+
+.mission-text,
+.promise-text {
+    color: #6b7280;
+}
