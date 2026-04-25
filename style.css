@@ -160,6 +160,15 @@ text-align: center;
 }
 
 /* Pages */
+
+.hero-button:hover {
+background-color: #ea580c;
+}
+
+.recipe-card-body {
+padding: 1rem;
+}
+
 .recipe-page,
 .about-page,
 .contact-page {
@@ -223,8 +232,8 @@ transition: transform 0.3s;
 transform: scale(1.1);
 }
 
-.recipe-card-body {
-padding: 1rem;
+.hero-button:hover {
+background-color: #ea580c;
 }
 
 /* Recipe Detail */
