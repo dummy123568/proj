@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinakdakan - Quick Recipes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="1.jpg" alt="Quick Recipes Logo" class="logo-img">
+                <span class="logo-text">Quick Recipes</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="recipe.html" class="nav-link">RECIPE</a>
+                <a href="contact.html" class="nav-link active">CONTACT</a>
+                <!-- The search form for server-side processing -->
+                <form action="search_results.html" method="get" class="search-form">
+                    <input type="text" name="query" placeholder="Search recipe..." class="search-input">
+                    <button type="submit" class="search-button">Go</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+<!-- Recipe Detail --> 
+<div class="recipe-detail">
+    <div class="recipe-detail-header">
+        <img src="dinakdakan.jpg" alt="Dinakdakan" class="recipe-detail-image"> <!-- Add image named dinakdakan.jpg -->
+    </div>
+
+    <div class="container recipe-detail-content">
+        <a href="recipe.html" class="back-link">← Back to Recipes</a>
+        
+        <h1 class="recipe-detail-title">Dinakdakan</h1>
+        
+        <div class="recipe-detail-meta">
+            <div class="meta-item">
+                <span class="meta-icon">⏱️</span>
+                <span>1 hour 10 minutes</span>
+            </div>
+        </div>
+
+        <!-- RADIO INPUTS (MUST BE HERE) -->
+        <input type="radio" name="servings" id="pax2" checked hidden>
+        <input type="radio" name="servings" id="pax4" hidden>
+        <input type="radio" name="servings" id="pax6" hidden>
+
+        <!-- BUTTONS -->
+        <div class="servings-tabs">
+            <label for="pax2" class="servings-tab">2 PAX</label>
+            <label for="pax4" class="servings-tab">4 PAX</label>
+            <label for="pax6" class="servings-tab">6 PAX</label>
+        </div>
+
+        <div class="recipe-detail-body">
+            <ul class="ingredients-list-detail">
+                <li><span class="ingredient-bullet">•</span>
+                    <span class="amount-2pax">250g</span>
+                    <span class="amount-4pax">500g</span>
+                    <span class="amount-6pax">750g</span>
+                    pig’s ears, face, and/or tongue, cleaned well
+                </li>
+
+                <li><span class="ingredient-bullet">•</span>
+                    <span class="amount-2pax">1 small</span>
+                    <span class="amount-4pax">1 medium</span>
+                    <span class="amount-6pax">1 large</span>
+                    onion, chopped
+                </li>
+
+                <li><span class="ingredient-bullet">•</span>
+                    <span class="amount-2pax">3 cloves</span>
+                    <span class="amount-4pax">5-6 cloves</span>
+                    <span class="amount-6pax">8-9 cloves</span>
+                    garlic, crushed
+                </li>
+
+                <li><span class="ingredient-bullet">•</span>
+                    <span class="amount-2pax">1 thumb-sized</span>
+                    <span class="amount-4pax">2 thumb-sized</span>
+                    <span class="amount-6pax">3 thumb-sized</span>
+                    ginger, crushed
+                </li>
+
+                <li><span class="ingredient-bullet">•</span>
+                    <span class="amount-2pax">2 pcs</span>
+                    <span class="amount-4pax">3-4 pcs</span>
+                    <span class="amount-6pax">5-6 pcs</span>
+                    dried bay leaves
+                </li>
+
+                <li><span class="ingredient-bullet">•</span>
+                    <span class="amount-2pax">1/2 tsp</span>
+                    <span class="amount-4pax">1 tsp</span>
+                    <span class="amount-6pax">1 ½ tsp</span>
+                    whole black peppercorns
+                </li>
+
+                <li><span class="ingredient-bullet">•</span>
+                    <span class="amount-2pax">2 tbsp</span>
+                    <span class="amount-4pax">3-4 tbsp</span>
+                    <span class="amount-6pax">5 tbsp</span>
+                    calamansi juice (or lemon juice)
+                </li>
+
+                <li><span class="ingredient-bullet">•</span>
+                    <span class="amount-2pax">1-2 pcs</span>
+                    <span class="amount-4pax">3-4 pcs</span>
+                    <span class="amount-6pax">5-6 pcs</span>
+                    red chili (siling labuyo), chopped (adjust spice level)
+                </li>
+
+                <li><span class="ingredient-bullet">•</span>
+                    <span class="amount-2pax">2 tbsp</span>
+                    <span class="amount-4pax">4 tbsp</span>
+                    <span class="amount-6pax">6 tbsp</span>
+                    mayonnaise
+                </li>
+
+                <li><span class="ingredient-bullet">•</span>
+                    <span class="amount-2pax">1 tsp</span>
+                    <span class="amount-4pax">2 tsp</span>
+                    <span class="amount-6pax">1 tbsp</span>
+                    fish sauce (optional, for extra saltiness)
+                </li>
+
+                <li><span class="ingredient-bullet">•</span>
+                    <span class="amount-2pax">to taste</span>
+                    <span class="amount-4pax">to taste</span>
+                    <span class="amount-6pax">to taste</span>
+                    salt and black pepper
+                </li>
+            </ul>
+
+            <!-- Instructions -->
+            <div class="recipe-section">
+                <h2 class="section-title-recipe">Instructions</h2>
+                <ol class="steps-list-detail">
+                    <li><span class="step-number">1</span><span class="step-text">In a pot, combine the pig parts, garlic, ginger, bay leaves, peppercorns, and a pinch of salt. Add enough water to cover the meat.</span></li>
+                    <li><span class="step-number">2</span><span class="step-text">Bring to a boil, then lower heat and simmer for 40–50 minutes until the meat is tender but not falling apart. Drain and let cool slightly.</span></li>
+                    <li><span class="step-number">3</span><span class="step-text">Grill or broil the boiled meat until the skin is crispy and slightly charred on the outside. You can also pan-fry if no grill is available.</span></li>
+                    <li><span class="step-number">4</span><span class="step-text">Cut the grilled meat into thin strips or bite-sized pieces and place in a mixing bowl.</span></li>
+                    <li><span class="step-number">5</span><span class="step-text">Add chopped onions, chopped red chilies, calamansi juice, and fish sauce (if using). Toss well to combine.</span></li>
+                    <li><span class="step-number">6</span><span class="step-text">Stir in the mayonnaise and mix until all pieces are evenly coated and the mixture is creamy.</span></li>
+                    <li><span class="step-number">7</span><span class="step-text">Season with salt and black pepper to taste. Adjust calamansi or chili if you want it more sour or spicy.</span></li>
+                    <li><span class="step-number">8</span><span class="step-text">Let it sit for 5–10 minutes to let the flavors blend together.</span></li>
+                    <li><span class="step-number">9</span><span class="step-text">Transfer to a serving plate and serve as an appetizer or main dish, best paired with steamed rice or cold drinks.</span></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

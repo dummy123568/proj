@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giniling - Quick Recipes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="1.jpg" alt="Quick Recipes Logo" class="logo-img">
+                <span class="logo-text">Quick Recipes</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="recipe.html" class="nav-link">RECIPE</a>
+                <a href="contact.html" class="nav-link active">CONTACT</a>
+                <!-- The search form for server-side processing -->
+                <form action="search_results.html" method="get" class="search-form">
+                    <input type="text" name="query" placeholder="Search recipe..." class="search-input">
+                    <button type="submit" class="search-button">Go</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+<!-- Recipe Detail --> 
+<div class="recipe-detail">
+    <div class="recipe-detail-header">
+        <img src="giniling.jpg" alt="Giniling" class="recipe-detail-image"> <!-- You'll need to add an image named giniling.jpg -->
+    </div>
+
+    <div class="container recipe-detail-content">
+        <a href="recipe.html" class="back-link">← Back to Recipes</a>
+        
+        <h1 class="recipe-detail-title">Giniling</h1>
+        
+        <div class="recipe-detail-meta">
+            <div class="meta-item">
+                <span class="meta-icon">⏱️</span>
+                <span>35 minutes</span>
+            </div>
+        </div>
+
+        <!-- RADIO INPUTS (MUST BE HERE) -->
+        <input type="radio" name="servings" id="pax2" checked hidden>
+        <input type="radio" name="servings" id="pax4" hidden>
+        <input type="radio" name="servings" id="pax6" hidden>
+
+        <!-- BUTTONS -->
+        <div class="servings-tabs">
+            <label for="pax2" class="servings-tab">2 PAX</label>
+            <label for="pax4" class="servings-tab">4 PAX</label>
+            <label for="pax6" class="servings-tab">6 PAX</label>
+        </div>
+
+        <div class="recipe-detail-body">
+            <ul class="ingredients-list-detail">
+                <li><span class="ingredient-bullet">•</span>
+                    <span class="amount-2pax">225g</span>
+                    <span class="amount-4pax">450g</span>
+                    <span class="amount-6pax">675g</span>
+                    ground pork or beef
+                </li>
+
+                <li><span class="ingredient-bullet">•</span>
+                    <span class="amount-2pax">1 small</span>
+                    <span class="amount-4pax">1 medium</span>
+                    <span class="amount-6pax">1 large</span>
+                    onion, chopped
+                </li>
+
+                <li><span class="ingredient-bullet">•</span>
+                    <span class="amount-2pax">2 cloves</span>
+                    <span class="amount-4pax">3-4 cloves</span>
+                    <span class="amount-6pax">5-6 cloves</span>
+                    garlic, minced
+                </li>
+
+                <li><span class="ingredient-bullet">•</span>
+                    <span class="amount-2pax">1/2 medium</span>
+                    <span class="amount-4pax">1 medium</span>
+                    <span class="amount-6pax">1 large</span>
+                    potato, peeled and diced
+                </li>
+
+                <li><span class="ingredient-bullet">•</span>
+                    <span class="amount-2pax">1/2 medium</span>
+                    <span class="amount-4pax">1 medium</span>
+                    <span class="amount-6pax">1 large</span>
+                    carrot, peeled and diced
+                </li>
+
+                <li><span class="ingredient-bullet">•</span>
+                    <span class="amount-2pax">1/2 cup</span>
+                    <span class="amount-4pax">1 cup</span>
+                    <span class="amount-6pax">1 ½ cups</span>
+                    tomato sauce
+                </li>
+
+                <li><span class="ingredient-bullet">•</span>
+                    <span class="amount-2pax">1 tbsp</span>
+                    <span class="amount-4pax">2 tbsp</span>
+                    <span class="amount-6pax">3 tbsp</span>
+                    soy sauce
+                </li>
+
+                <li><span class="ingredient-bullet">•</span>
+                    <span class="amount-2pax">1/2 tbsp</span>
+                    <span class="amount-4pax">1 tbsp</span>
+                    <span class="amount-6pax">1 ½ tbsp</span>
+                    fish sauce (patis)
+                </li>
+
+                <li><span class="ingredient-bullet">•</span>
+                    <span class="amount-2pax">1/4 cup</span>
+                    <span class="amount-4pax">1/2 cup</span>
+                    <span class="amount-6pax">3/4 cup</span>
+                    frozen green peas
+                </li>
+
+                <li><span class="ingredient-bullet">•</span>
+                    <span class="amount-2pax">1 tbsp</span>
+                    <span class="amount-4pax">1-2 tbsp</span>
+                    <span class="amount-6pax">2 tbsp</span>
+                    cooking oil
+                </li>
+
+                <li><span class="ingredient-bullet">•</span>
+                    <span class="amount-2pax">to taste</span>
+                    <span class="amount-4pax">to taste</span>
+                    <span class="amount-6pax">to taste</span>
+                    salt and black pepper
+                </li>
+            </ul>
+
+            <!-- Instructions -->
+            <div class="recipe-section">
+                <h2 class="section-title-recipe">Instructions</h2>
+                <ol class="steps-list-detail">
+                    <li><span class="step-number">1</span><span class="step-text">Heat cooking oil in a pan over medium heat. Sauté chopped onions until softened and translucent.</span></li>
+                    <li><span class="step-number">2</span><span class="step-text">Add minced garlic and cook for another minute until fragrant.</span></li>
+                    <li><span class="step-number">3</span><span class="step-text">Add ground pork or beef. Cook, breaking it up with a spoon, until browned and crumbly. Drain excess fat if necessary.</span></li>
+                    <li><span class="step-number">4</span><span class="step-text">Stir in diced carrots and potatoes, mixing well with the meat.</span></li>
+                    <li><span class="step-number">5</span><span class="step-text">Pour in tomato sauce, soy sauce, and fish sauce. Stir to combine.</span></li>
+                    <li><span class="step-number">6</span><span class="step-text">Bring to a gentle boil, then reduce heat to low, cover, and simmer for 15-20 minutes, or until vegetables are tender. Stir occasionally.</span></li>
+                    <li><span class="step-number">7</span><span class="step-text">Add frozen green peas and cook for another 2-3 minutes until tender-crisp.</span></li>
+                    <li><span class="step-number">8</span><span class="step-text">Season with salt and black pepper to taste. Adjust any seasonings as desired.</span></li>
+                    <li><span class="step-number">9</span><span class="step-text">Serve hot with steamed white rice.</span></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

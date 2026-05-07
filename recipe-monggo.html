@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ginisang munggo - Quick Recipes</title>
+    <title>Ginisang Munggo - Quick Recipes</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,124 +16,127 @@
             </a>
             <div class="nav-links">
                 <a href="index.html" class="nav-link">HOME</a>
-                <a href="recipe.html" class="nav-link active">RECIPE</a>
-                <a href="contact.html" class="nav-link">CONTACT</a>
+                <a href="recipe.html" class="nav-link">RECIPE</a>
+                <a href="contact.html" class="nav-link active">CONTACT</a>
+                <!-- The search form for server-side processing -->
+                <form action="search_results.html" method="get" class="search-form">
+                    <input type="text" name="query" placeholder="Search recipe..." class="search-input">
+                    <button type="submit" class="search-button">Go</button>
+                </form>
             </div>
         </div>
     </nav>
+<!-- Recipe Detail --> 
+<div class="recipe-detail">
+    <div class="recipe-detail-header">
+        <img src="monggo.PNG" alt="Ginisang Munggo" class="recipe-detail-image">
+    </div>
 
-    <!-- Recipe Detail -->
-    <div class="recipe-detail">
-        <div class="recipe-detail-header">
-            <img src="monggo.PNG" alt="monggo" class="recipe-detail-image">
+    <div class="container recipe-detail-content">
+        <a href="recipe.html" class="back-link">← Back to Recipes</a>
+        
+        <h1 class="recipe-detail-title">Ginisang Munggo (Monggo)</h1>
+        
+        <div class="recipe-detail-meta">
+            <div class="meta-item">
+                <span class="meta-icon">⏱️</span>
+                <span>60 minutes</span>
+            </div>
         </div>
 
-        <div class="container recipe-detail-content">
-            <a href="recipe.html" class="back-link">← Back to Recipes</a>
-            
-            <h1 class="recipe-detail-title">Ginisang Munggo (Monggo)</h1>
-            
-            <div class="recipe-detail-meta">
-                <div class="meta-item">
-                    <span class="meta-icon">⏱️</span>
-                    <span>60 minutes</span>
-                </div>
-            </div>
+        <!-- RADIO INPUTS (MUST BE HERE) -->
+        <input type="radio" name="servings" id="pax2" checked hidden>
+        <input type="radio" name="servings" id="pax4" hidden>
+        <input type="radio" name="servings" id="pax6" hidden>
 
-<!-- RADIO INPUTS (MUST BE HERE) -->
-<input type="radio" name="servings" id="pax2" checked hidden>
-<input type="radio" name="servings" id="pax4" hidden>
-<input type="radio" name="servings" id="pax6" hidden>
+        <!-- BUTTONS -->
+        <div class="servings-tabs">
+            <label for="pax2" class="servings-tab">2 PAX</label>
+            <label for="pax4" class="servings-tab">4 PAX</label>
+            <label for="pax6" class="servings-tab">6 PAX</label>
+        </div>
 
-<!-- BUTTONS -->
-<div class="servings-tabs">
-    <label for="pax2" class="servings-tab">2 PAX</label>
-    <label for="pax4" class="servings-tab">4 PAX</label>
-    <label for="pax6" class="servings-tab">6 PAX</label>
-</div>
+        <div class="recipe-detail-body">
+            <ul class="ingredients-list-detail">
+                <li><span class="ingredient-bullet">•</span>
+                    <span class="amount-2pax">1/2 cup</span>
+                    <span class="amount-4pax">1 cup</span>
+                    <span class="amount-6pax">1 1/2 cups</span>
+                    munggo beans
+                </li>
 
-<div class="recipe-detail-body">
+                <li><span class="ingredient-bullet">•</span>
+                    <span class="amount-2pax">1–2 tbsp</span>
+                    <span class="amount-4pax">2–3 tbsp</span>
+                    <span class="amount-6pax">3–4 tbsp</span>
+                    cooking oil
+                </li>
 
-    <ul class="ingredients-list-detail">
+                <li><span class="ingredient-bullet">•</span>
+                    <span class="amount-2pax">2 cloves</span>
+                    <span class="amount-4pax">4 cloves</span>
+                    <span class="amount-6pax">6 cloves</span>
+                    garlic (minced)
+                </li>
 
-        <li><span class="ingredient-bullet">•</span>
-            <span class="amount-2pax">1/2 cup</span>
-            <span class="amount-4pax">1 cup</span>
-            <span class="amount-6pax">1 1/2 cup</span>
-             Munggo beans
-        </li>
+                <li><span class="ingredient-bullet">•</span>
+                    <span class="amount-2pax">1 small</span>
+                    <span class="amount-4pax">2 small</span>
+                    <span class="amount-6pax">3 small</span>
+                    onion (chopped)
+                </li>
 
-        <li><span class="ingredient-bullet">•</span>
-            <span class="amount-2pax">1-2 tbsp</span>
-            <span class="amount-4pax">2-3 tbsp</span>
-            <span class="amount-6pax">3-4 tbsp</span>
-            oil
-        </li>
-             <li><span class="ingredient-bullet">•</span>
-            <span class="amount-2pax">2</span>
-            <span class="amount-4pax">4</span>
-            <span class="amount-6pax">6</span>
-            Cloves Garlic (minced)
-        </li>
+                <li><span class="ingredient-bullet">•</span>
+                    <span class="amount-2pax">1 small</span>
+                    <span class="amount-4pax">2 small</span>
+                    <span class="amount-6pax">3 small</span>
+                    tomato (chopped)
+                </li>
 
-            <li><span class="ingredient-bullet">•</span>
-            <span class="amount-2pax">1</span>
-            <span class="amount-4pax">2</span>
-            <span class="amount-6pax">3</span>
-            small onion (chopped)
-        </li>
+                <li><span class="ingredient-bullet">•</span>
+                    <span class="amount-2pax">1/4 cup</span>
+                    <span class="amount-4pax">1/2 cup</span>
+                    <span class="amount-6pax">3/4 cup</span>
+                    pork (optional) or dried fish (optional)
+                </li>
 
-        <li><span class="ingredient-bullet">•</span>
-            <span class="amount-2pax">1</span>
-            <span class="amount-4pax">1</span>
-            <span class="amount-6pax">3</span>
-            small tomato(chopped)
-        </li>
+                <li><span class="ingredient-bullet">•</span>
+                    <span class="amount-2pax">3–4 cups</span>
+                    <span class="amount-4pax">6–7 cups</span>
+                    <span class="amount-6pax">8–10 cups</span>
+                    water
+                </li>
 
-        
-        <li><span class="ingredient-bullet">•</span>
-            <span class="amount-2pax">1/4 cup</span>
-            <span class="amount-4pax">1/2 cup</span>
-            <span class="amount-6pax">3/4 1 cup</span>
-            pork(optional) or dried fish(optional)
-        </li>
-    
-            <li><span class="ingredient-bullet">•</span>
-            <span class="amount-2pax">3-4</span>
-            <span class="amount-4pax">6-7</span>
-            <span class="amount-6pax">8-10</span>
-            cups water
-        </li>
+                <li><span class="ingredient-bullet">•</span>
+                    <span class="amount-2pax">1 cup</span>
+                    <span class="amount-4pax">2 cups</span>
+                    <span class="amount-6pax">3 cups</span>
+                    malunggay leaves (optional)
+                </li>
 
-             <li><span class="ingredient-bullet">•</span>
-            <span class="amount-2pax">1</span>
-            <span class="amount-4pax">2</span>
-            <span class="amount-6pax">3</span>
-            cup leaves of malunggay(optional)
-        </li>
+                <li><span class="ingredient-bullet">•</span>
+                    <span class="amount-2pax">to taste</span>
+                    <span class="amount-4pax">to taste</span>
+                    <span class="amount-6pax">to taste</span>
+                    salt and pepper
+                </li>
+            </ul>
 
-    </ul>
-      <!-- Instructions -->
-                <div class="recipe-section">
-                    <h2 class="section-title-recipe">Instructions</h2>
-                    <ol class="steps-list-detail">
-                        <li><span class="step-number">1</span><span class="step-text">Boil munggo until soft (around 30–45 mins).</span></li>
-                        <li><span class="step-number">2</span><span class="step-text">In another pan, sauté garlic, onion, and tomato.</span></li>
-                        <li><span class="step-number">3</span><span class="step-text">Add pork or dried fish and cook a bit.</span></li>
-                        <li><span class="step-number">4</span><span class="step-text">Pour in boiled munggo + water</span></li>
-                        <li><span class="step-number">5</span><span class="step-text">Simmer for 5–10 mins.</span></li>
-                        <li><span class="step-number">6</span><span class="step-text">Add malunggay</span></li>
-                        <li><span class="step-number">7</span><span class="step-text">Season with salt and pepper.</span></li>
-                    </ol>
-                </div>
+            <!-- Instructions -->
+            <div class="recipe-section">
+                <h2 class="section-title-recipe">Instructions</h2>
+                <ol class="steps-list-detail">
+                    <li><span class="step-number">1</span><span class="step-text">Boil munggo beans in water until soft (around 30–45 minutes).</span></li>
+                    <li><span class="step-number">2</span><span class="step-text">In a separate pan, heat oil and sauté garlic, onion, and tomato until aromatic.</span></li>
+                    <li><span class="step-number">3</span><span class="step-text">Add pork or dried fish (if using) and cook for 2–3 minutes.</span></li>
+                    <li><span class="step-number">4</span><span class="step-text">Pour in the boiled munggo along with its water.</span></li>
+                    <li><span class="step-number">5</span><span class="step-text">Bring to a gentle simmer and cook for 5–10 minutes to blend flavors.</span></li>
+                    <li><span class="step-number">6</span><span class="step-text">Add malunggay leaves and cook for another minute.</span></li>
+                    <li><span class="step-number">7</span><span class="step-text">Season with salt and pepper to taste, then serve hot.</span></li>
+                </ol>
             </div>
         </div>
     </div>
-
 </div>
-
-</div>
-</div>
-
 </body>
 </html>

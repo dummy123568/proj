@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sinigang na Baboy - Quick Recipes</title>
+    <title>Chicken Adobo - Quick Recipes</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,125 +16,118 @@
             </a>
             <div class="nav-links">
                 <a href="index.html" class="nav-link">HOME</a>
-                <a href="recipe.html" class="nav-link active">RECIPE</a>
-                <a href="contact.html" class="nav-link">CONTACT</a>
+                <a href="recipe.html" class="nav-link">RECIPE</a>
+                <a href="contact.html" class="nav-link active">CONTACT</a>
+                <!-- The search form for server-side processing -->
+                <form action="search results.html" method="get" class="search-form">
+                    <input type="text" name="query" placeholder="Search recipe..." class="search-input">
+                    <button type="submit" class="search-button">Go</button>
+                </form>
             </div>
         </div>
     </nav>
+<!-- Recipe Detail --> 
+<div class="recipe-detail">
+    <div class="recipe-detail-header">
+        <img src="adobo.jpeg" alt="Chicken Adobo" class="recipe-detail-image">
+    </div>
 
-    <!-- Recipe Detail -->
-    <div class="recipe-detail">
-        <div class="recipe-detail-header">
-            <img src="adobo.jpeg" alt="Chicken Adobo" class="recipe-detail-image">
+    <div class="container recipe-detail-content">
+        <a href="recipe.html" class="back-link">← Back to Recipes</a>
+        
+        <h1 class="recipe-detail-title">Chicken Adobo</h1>
+        
+        <div class="recipe-detail-meta">
+            <div class="meta-item">
+                <span class="meta-icon">⏱️</span>
+                <span>45 minutes</span>
+            </div>
         </div>
 
-        <div class="container recipe-detail-content">
-            <a href="recipe.html" class="back-link">← Back to Recipes</a>
-            
-            <h1 class="recipe-detail-title">Chicken Adobo</h1>
-            
-            <div class="recipe-detail-meta">
-                <div class="meta-item">
-                    <span class="meta-icon">⏱️</span>
-                    <span>45 minutes</span>
-                </div>
-            </div>
+        <!-- RADIO INPUTS (MUST BE HERE) -->
+        <input type="radio" name="servings" id="pax2" checked hidden>
+        <input type="radio" name="servings" id="pax4" hidden>
+        <input type="radio" name="servings" id="pax6" hidden>
 
-            <!-- RADIO INPUTS (MUST BE HERE) -->
-<input type="radio" name="servings" id="pax2" checked hidden>
-<input type="radio" name="servings" id="pax4" hidden>
-<input type="radio" name="servings" id="pax6" hidden>
+        <!-- BUTTONS -->
+        <div class="servings-tabs">
+            <label for="pax2" class="servings-tab">2 PAX</label>
+            <label for="pax4" class="servings-tab">4 PAX</label>
+            <label for="pax6" class="servings-tab">6 PAX</label>
+        </div>
 
-<!-- BUTTONS -->
-<div class="servings-tabs">
-    <label for="pax2" class="servings-tab">2 PAX</label>
-    <label for="pax4" class="servings-tab">4 PAX</label>
-    <label for="pax6" class="servings-tab">6 PAX</label>
-</div>
+        <div class="recipe-detail-body">
+            <ul class="ingredients-list-detail">
+                <li><span class="ingredient-bullet">•</span>
+                    <span class="amount-2pax">500g</span>
+                    <span class="amount-4pax">1000g</span>
+                    <span class="amount-6pax">1500g</span>
+                    chicken thighs
+                </li>
 
-<div class="recipe-detail-body">
+                <li><span class="ingredient-bullet">•</span>
+                    <span class="amount-2pax">4 tbsp</span>
+                    <span class="amount-4pax">8 tbsp</span>
+                    <span class="amount-6pax">12 tbsp</span>
+                    soy sauce
+                </li>
 
-    <ul class="ingredients-list-detail">
+                <li><span class="ingredient-bullet">•</span>
+                    <span class="amount-2pax">4 tbsp</span>
+                    <span class="amount-4pax">8 tbsp</span>
+                    <span class="amount-6pax">12 tbsp</span>
+                    vinegar
+                </li>
 
-        <li><span class="ingredient-bullet">•</span>
-            <span class="amount-2pax">500g</span>
-            <span class="amount-4pax">1000g</span>
-            <span class="amount-6pax">1500g</span>
-            chiken thighs
-        </li>
+                <li><span class="ingredient-bullet">•</span>
+                    <span class="amount-2pax">6</span>
+                    <span class="amount-4pax">12</span>
+                    <span class="amount-6pax">18</span>
+                    garlic cloves
+                </li>
 
-        <li><span class="ingredient-bullet">•</span>
-            <span class="amount-2pax">4 tbsp</span>
-            <span class="amount-4pax">8 tbsp</span>
-            <span class="amount-6pax">12 tbsp</span>
-            Soy sauce
-        </li>
-             <li><span class="ingredient-bullet">•</span
-            <span class="amount-2pax">4 tbsp</span>
-            <span class="amount-4pax">8 tbsp</span>
-            <span class="amount-6pax">12 tbsp</span>
-            vinigar
-        </li>
+                <li><span class="ingredient-bullet">•</span>
+                    <span class="amount-2pax">2 pcs</span>
+                    <span class="amount-4pax">4 pcs</span>
+                    <span class="amount-6pax">6 pcs</span>
+                    bay leaves
+                </li>
 
-        <li><span class="ingredient-bullet">•</span>
-            <span class="amount-2pax">1</span>
-            <span class="amount-4pax">2</span>
-            <span class="amount-6pax">3</span>
-            Soy sauce
-        </li>
+                <li><span class="ingredient-bullet">•</span>
+                    <span class="amount-2pax">1 tsp</span>
+                    <span class="amount-4pax">2 tsp</span>
+                    <span class="amount-6pax">3 tsp</span>
+                    black peppercorns
+                </li>
 
-        <li><span class="ingredient-bullet">•</span>
-            <span class="amount-2pax">6 </span>
-            <span class="amount-4pax">12</span>
-            <span class="amount-6pax">18</span>
-            garlic cloves
-        </li>
+                <li><span class="ingredient-bullet">•</span>
+                    <span class="amount-2pax">200 ml</span>
+                    <span class="amount-4pax">400 ml</span>
+                    <span class="amount-6pax">600 ml</span>
+                    water
+                </li>
 
-        
-        <li><span class="ingredient-bullet">•</span>
-            <span class="amount-2pax">2 pcs</span>
-            <span class="amount-4pax">4 pcs</span>
-            <span class="amount-6pax">6 pcs</span>
-            Bay leaves
-        </li>
-    
-            <li><span class="ingredient-bullet">•</span>
-            <span class="amount-2pax">1 tsp</span>
-            <span class="amount-4pax">2 tsp</span>
-            <span class="amount-6pax">3 tsp</span>
-            Black peppercorns
-        </li>
+                <li><span class="ingredient-bullet">•</span>
+                    <span class="amount-2pax">2 tbsp</span>
+                    <span class="amount-4pax">4 tbsp</span>
+                    <span class="amount-6pax">6 tbsp</span>
+                    cooking oil
+                </li>
+            </ul>
 
-            <li><span class="ingredient-bullet">•</span>
-            <span class="amount-2pax">200 ml</span>
-            <span class="amount-4pax">400 ml</span>
-            <span class="amount-6pax">600 ml</span>
-            Water
-        </li>
-
-        <li><span class="ingredient-bullet">•</span>
-            <span class="amount-2pax">2 tbsp</span>
-            <span class="amount-4pax">4 tbsp</span>
-            <span class="amount-6pax">6 tbsp</span>
-            cooking oil
-        </li>
-
-                <!-- Instructions -->
-                <div class="recipe-section">
-                    <h2 class="section-title-recipe">Instructions</h2>
-                    <ol class="steps-list-detail">
-                        <li><span class="step-number">1</span><span class="step-text">Marinate chicken in soy sauce, vinegar, crushed garlic, bay leaves, and peppercorns for 30 minutes</span></li>
-                        <li><span class="step-number">2</span><span class="step-text">Heat oil in a pan and sauté the marinated chicken until lightly browned</span></li>
-                        <li><span class="step-number">3</span><span class="step-text">Pour in the marinade and add water</span></li>
-                        <li><span class="step-number">4</span><span class="step-text">Bring to a boil, then reduce heat and simmer for 30-35 minutes</span></li>
-                        <li><span class="step-number">5</span><span class="step-text">Turn chicken pieces occasionally until tender and sauce thickens</span></li>
-                        <li><span class="step-number">6</span><span class="step-text">Adjust seasoning if needed with more soy sauce or vinegar</span></li>
-                        <li><span class="step-number">7</span><span class="step-text">Remove bay leaves before serving</span></li>
-                        <li><span class="step-number">8</span><span class="step-text">Serve hot with steamed rice</span></li>
-                    </ol>
-                </div>
+            <!-- Instructions -->
+            <div class="recipe-section">
+                <h2 class="section-title-recipe">Instructions</h2>
+                <ol class="steps-list-detail">
+                    <li><span class="step-number">1</span><span class="step-text">Marinate chicken in soy sauce, vinegar, garlic, bay leaves, and peppercorns for 30 minutes.</span></li>
+                    <li><span class="step-number">2</span><span class="step-text">Heat oil and sauté chicken until lightly browned.</span></li>
+                    <li><span class="step-number">3</span><span class="step-text">Add marinade and water.</span></li>
+                    <li><span class="step-number">4</span><span class="step-text">Simmer for 30–35 minutes until tender.</span></li>
+                    <li><span class="step-number">5</span><span class="step-text">Adjust seasoning and serve hot with rice.</span></li>
+                </ol>
             </div>
         </div>
     </div>
+</div>
 </body>
 </html>

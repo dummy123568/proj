@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results - Quick Recipes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="container nav-container">
+        <a href="index.html" class="logo">
+            <img src="1.jpg" class="logo-img">
+            <span class="logo-text">Quick Recipes</span>
+        </a>
+
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">HOME</a>
+            <a href="recipe.html" class="nav-link">RECIPE</a>
+            <a href="contact.html" class="nav-link">CONTACT</a>
+
+            <!-- SEARCH FORM -->
+            <form action="search results.html" method="get">
+                <input type="text" name="q" placeholder="Search recipes..." class="search-input">
+            </form>
+        </div>
+    </div>
+</nav>
+
+<!-- SEARCH RESULT SECTION -->
+<div class="container search-page">
+
+    <h1 class="page-title">Search Results</h1>
+
+    <!-- You can change this text dynamically later -->
+    <p class="page-subtitle">Showing results for "<strong>Chicken</strong>"</p>
+
+    <!-- RESULTS GRID -->
+    <div class="recipe-grid">
+
+        <!-- RESULT CARD -->
+        <a href="recipe-adobo.html" class="recipe-card">
+            <div class="recipe-card-image-wrapper">
+                <img src="adobo.jpeg" class="recipe-card-image">
+            </div>
+            <div class="recipe-card-body">
+                <h3>Chicken Adobo</h3>
+                <p>Classic Filipino dish with soy sauce and vinegar.</p>
+            </div>
+        </a>
+          <!-- You can change this text dynamically later -->
+    <p class="page-subtitle">Showing results for "<strong>baboy</strong>"</p>
+
+        <a href="recipe-sinigang.html" class="recipe-card">
+            <div class="recipe-card-image-wrapper">
+                <img src="sinigang.jpg" class="recipe-card-image">
+            </div>
+            <div class="recipe-card-body">
+                <h3>Sinigang na Baboy</h3>
+                <p>Sour tamarind soup with pork and vegetables.</p>
+            </div>
+        </a>
+
+        <a href="recipe-dinuguan.html" class="recipe-card">
+            <div class="recipe-card-image-wrapper">
+                <img src="dinuguan.jpg" class="recipe-card-image">
+            </div>
+            <div class="recipe-card-body">
+                <h3>Dinuguan</h3>
+                <p>Rich savory pork blood stew.</p>
+            </div>
+        </a>
+
+    </div>
+
+    <!-- NO RESULT MESSAGE -->
+    <div class="no-results" style="display:none;">
+        <p>No recipes found. Try another search.</p>
+    </div>
+</div>
+
+</body>
+</html>
